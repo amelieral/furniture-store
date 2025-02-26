@@ -1,0 +1,279 @@
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+@keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+.top_cart {
+    height: 400px;
+    background-image: url(img/cartlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 64px;
+}
+
+.heading_cart {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &_name_box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_item_product {
+        border-top: 0.5px solid #cacdd8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+
+    &_item {
+        border-top: 0.5px solid #cacdd8;
+        padding-top: 32px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &_left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &_name {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &_text {
+        color: #888;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &_price {
+        color: #050505;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &_link_box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &_link {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        text-decoration-line: underline;
+    }
+
+    &_button_box {
+        display: flex;
+        gap: 7px;
+    }
+
+    &_button {
+        width: 200px;
+        height: 37px;
+        display: block;
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+        transition: all 0.3s;
+
+        &:hover{
+            color: white;
+            background-color:black;
+        }
+
+        &_form {
+            width: 290px;
+            height: 41px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            border: 1px solid #040404;
+            background-color: transparent;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            animation: heartbeat 1.5s ease-in-out 2 both;
+        }
+    }
+
+    &_number {
+        width: 71px;
+        height: 51px;
+        font-family: "Poppins", sans-serif;
+        border-radius: 6px;
+        background: #F7F6F6;
+        outline: none;
+        border: none;
+        color: var(--Color---7, #000);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    &_form {
+        border-radius: 20px;
+        box-sizing: border-box;
+        background: #F7F6F6;
+        height: 556px;
+        grid-column: span 4;
+    }
+
+    &_content {
+        grid-column: span 8;
+    }
+}
+
+.form {
+    padding-top: 42px;
+    padding-left: 27px;
+    padding-right: 32px;
+
+
+    &_heading {
+        font-family: "Poppins", sans-serif;
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &_box {
+        padding-top: 35px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &_item {
+        outline: none;
+        padding-bottom: 3px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+        background: transparent;
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    &_result {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    &_button {
+        display: flex;
+        justify-content: center;
+    }
+}
+

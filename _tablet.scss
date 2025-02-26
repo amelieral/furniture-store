@@ -1,0 +1,35 @@
+@media (max-width: 1248px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .for {
+        &_item {
+            height: 268px;
+        }
+    }
+
+    .product-content {
+        column-gap: 29px;
+        row-gap: 39px;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .form {
+        grid-row: 3;
+        width: 376px;
+        height: 556px;
+    }
+
+    .cart_content {
+        width: 100%;
+        grid-column: span 12;
+    }
+}

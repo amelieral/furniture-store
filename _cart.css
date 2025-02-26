@@ -1,0 +1,15 @@
+.top_cart {
+  height: 400px;
+  background-image: url(img/cartlogo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading_big {
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  margin-top: 127px;
+}/*# sourceMappingURL=_cart.css.map */
